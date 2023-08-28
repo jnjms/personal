@@ -14,18 +14,20 @@ import * as hours from "../hours.md"
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Hello, </h1>
-			<p>I am John James!</p>
-			<p>Welcome to the home page of my new website.</p>
-			<p>I am currently a flight instructor at <a href="https://und.edu/">University of North Dakota</a></p>
-			<p>Things that i like to do.</p>
-			<ul>
-				<li>Fly</li>
-				<li>Computers</code></li>
+			<h1>Flight Hours</h1>
+			
+			<p>Current as of : </p>
 
-			</ul>
-			<p>This is being written with astro. Using the offical blog format.</p>
-			<p>Current total hours {hours.frontmatter.total_hours}</p>
+			<p>Current total hours {hours.frontmatter.total_hours} end</p>
+			
+			<div class="grid">
+			  <div>Total</div>
+			  <div>{hours.frontmatter.total_hours}</div>
+			  <div>PIC</div>
+			  <div></div>
+			  <div>Five</div>
+			  <div>Cross Country</div>
+			</div>
 		</main>
 		<Footer />
 	</body>
